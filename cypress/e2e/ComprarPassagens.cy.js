@@ -1,4 +1,4 @@
-// Carrega os tipos do cypress
+
 /// <reference types="cypress" />
 
 describe('Teste Blaze Demo', () => {
@@ -23,7 +23,7 @@ describe('Teste Blaze Demo', () => {
             .should('have.value', 'Find Flights')
             .click()
 
-        //carrega a página de lista de vôos
+       
 
         cy.get('h3')
             .should('have.text', 'Flights from São Paolo to Rome: ')
@@ -34,7 +34,7 @@ describe('Teste Blaze Demo', () => {
         cy.get('table tbody > tr:nth-child(2) > td:nth-child(2) > input')
             .click()
 
-        //carrega a página de pagamento
+        
 
         cy.get('h2')
             .should('have.text', 'Your flight from TLV to SFO has been reserved.')
@@ -72,7 +72,7 @@ describe('Teste Blaze Demo', () => {
         cy.get('input[value="Purchase Flight"]')
             .click()
 
-        //carrega página de confirmação da compra
+        
 
         cy.get('h1')
             .should('have.text', 'Thank you for your purchase today!')
